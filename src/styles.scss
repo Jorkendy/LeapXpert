@@ -1,0 +1,56 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+
+  input {
+    height: 30px;
+    border-radius: 8px;
+    width: 200px;
+    padding: 15px;
+  }
+
+  .header {
+    display: flex;
+    width: 200px;
+    margin: 15px auto;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      background: none;
+
+      &.active {
+        color: green;;
+      }
+    }
+  }
+
+  .tasksList {
+    max-height: 150px;
+    overflow-y: scroll;
+    border: 1px solid grey;
+    width: 200px;
+    margin: 15px auto;
+    border-radius: 8px;      
+    padding: 0 15px;
+
+    p.done {
+      text-decoration: line-through;
+    }
+
+    .taskItem {
+      height: 30px;
+      width: 100%;      
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .deleteButton {
+        border: none;
+        color: red;
+        background: none;
+      }
+    }
+  }
+}
